@@ -1,11 +1,11 @@
-const mongo = require("mongoose");
+const mongoose = require("mongoose");
 
-const booking = new mongo.Schema({
+const booking = new mongoose.Schema({
   name: String,
   description: String,
   email:String,
 });
 
-const Booking = mongo.model("Booking", booking);
+const Booking = mongoose.model("Booking", booking);
 
 module.exports = Booking;
