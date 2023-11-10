@@ -9,7 +9,7 @@ const JWT_SECRET = "ajehbaikeoe{'.'/.'326659564DFEAJHJBC1C48C";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "v.varunvenkat06081998@gmail.com",
+    user: "hubertmichaelseelan@gmail.com",
     pass: "yonpdfpheczokktp",
   },
 });
@@ -91,9 +91,9 @@ exports.forgetpassword = async (req, res) => {
     if (existingUser) {
       const link = `http://localhost:3000/resetpassword`;
       const mailOption = {
-        from: "v.varunvenkat06081998@gmail.com",
+        from: "hubertmichaelseelan@gmail.com",
         to: existingUser.email,
-        subject: `Welcome From Varun Bookings Team - ${existingUser.name} `,
+        subject: `Welcome From Hall Bookings Team - ${existingUser.name} `,
         html: `<!DOCTYPE html>
               <html lang="en">
               <head>
